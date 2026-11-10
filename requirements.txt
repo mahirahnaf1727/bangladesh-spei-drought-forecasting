@@ -1,0 +1,33 @@
+# Python 3.11 or later. Versions with == are those recorded in the run logs of the paper
+# (Windows 10, CPU). Versions with >= were not recorded; the quick check was rerun with the
+# version given in the comment.
+
+# core (recorded)
+numpy==2.4.6
+pandas==3.0.5
+scikit-learn==1.9.0
+
+# models (recorded)
+tensorflow==2.21.0
+keras==3.15.0
+xgboost==3.2.0
+EMD-signal==1.10.0          # imported as PyEMD (CEEMDAN)
+
+# interpretation and tuning (not recorded)
+shap                        # GradientExplainer
+optuna                      # 4_tuning only
+optuna-integration          # 4_tuning only (Keras pruning callback)
+
+# statistics, figures and maps (not recorded; rerun versions in comments)
+scipy>=1.11                 # 1.18.1
+statsmodels>=0.14           # 0.15.0
+matplotlib>=3.8             # 3.11.2
+geopandas>=0.14             # 1.2.0
+shapely>=2.0                # 2.2.0
+Pillow>=10                  # 12.3.0
+pypdf>=4                    # 6.17.0
+
+# raw-data steps only (01_divisional_average.py, 02_compute_pet.py)
+xarray
+netCDF4
+rasterio

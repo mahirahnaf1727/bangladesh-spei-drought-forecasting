@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below, together with the paper."
+type: software
+title: "Code for: Evaluation of machine-learning and deep-learning SPEI drought forecasts against persistence across timescales and lead times in Bangladesh"
+version: "1.0"
+license: MIT
+authors:
+  - family-names: Ahnaf
+    given-names: Mahir
+    orcid: "https://orcid.org/0009-0007-0992-9560"
+    affiliation: "Department of Urban and Regional Planning, Khulna University of Engineering & Technology (KUET), Bangladesh"
+  - family-names: Sarkar
+    given-names: Showmitra Kumar
+    orcid: "https://orcid.org/0000-0001-5928-7577"
+    affiliation: "Department of Urban and Regional Planning, Khulna University of Engineering & Technology (KUET), Bangladesh"
+keywords:
+  - drought forecasting
+  - SPEI
+  - deep learning
+  - XGBoost
+  - CEEMDAN
+  - persistence
+  - ERA5
+  - SHAP
+  - Bangladesh
+abstract: >-
+  Python code that builds SPEI-3, SPEI-6 and SPEI-12 for the eight divisions of
+  Bangladesh from ERA5 monthly data (1980-2024), tests ERA5 against 35 Bangladesh
+  Meteorological Department stations, screens the predictors, and trains five models
+  (XGBoost, CNN, Bi-LSTM, CNN-BiLSTM and CEEMDAN-BiLSTM) with five seeds at leads of
+  1-3 months (135 runs, test period 2019-2024). It applies the model-selection rule
+  fixed in advance, circular block bootstrap intervals, Diebold-Mariano tests and
+  SHAP, and rebuilds every table and figure of the paper.
