@@ -1,4 +1,4 @@
-# Bangladesh SPEI drought forecasting: code for Paper 1
+# Bangladesh SPEI drought forecasting
 
 Code for the paper
 
