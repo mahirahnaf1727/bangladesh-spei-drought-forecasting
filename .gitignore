@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# data and rebuilt outputs are not part of the repository
+# (P1_Data comes from Zenodo; P1_work is made by the scripts)
+P1_Data/
+P1_work/
+
+# system files
+.DS_Store
+Thumbs.db
