@@ -160,6 +160,7 @@ Deep-learning runs can differ in the last decimals on other hardware or library 
 | `S7_shap.py` | SHAP (GradientExplainer, 150 training windows as background) for the selected models at lead 1, all five seeds (calls `run12_shap.py`). Run after S4. Writes `<OUT_ROOT>/_shap`. |
 
 ### 8_figures
+> **Note on figure and table numbers.** The script names in `8_figures` and the figure numbers in this README follow the manuscript version that was current when release v1.0 was made. Figure numbers have since changed and may change again in later versions, including the preprint and the published article. Please identify each figure script by the content named in its file name and description (for example screening, fidelity, maps, SHAP) rather than by figure number. The code is unchanged.
 
 - `make_all.py` builds every figure made from code, and `check_figs.py` checks the files.
 - `journal_style.py` sets one style for all figures; `fig_data.py` loads the tables and prediction files; `p1_fig_config.py` holds the paths.
